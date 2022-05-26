@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto&display=swap");
+
+* {
+	transition: all 0.4s !important;
+}
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+		Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+		sans-serif;
+	min-height: 100vh;
+	background-image: linear-gradient(
+		to right bottom,
+		#6e2387,
+		#5b1378,
+		#4b2886,
+		#3e2072,
+		#21186f,
+		#391c78,
+		#0e22a0,
+		#0054db
+	);
+}
+.font-lobster {
+	font-family: "Lobster Two", cursive;
+}
+
+h1 {
+	font-size: 2em !important;
+}
+h2 {
+	font-size: 1.5em !important;
+}
+h3 {
+	font-size: 1.17em !important;
+}
+h5 {
+	font-size: 0.83em !important;
+}
+h6 {
+	font-size: 0.75em !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bolder !important;
+}
+
+button,
+svg {
+	transition: all 0.4s !important;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 10px;
+	border: 6px solid rgba(144, 144, 144, 0.137);
+}
+::-webkit-scrollbar-track-piece {
+	border-radius: 10px;
+	background: rgba(245, 251, 254, 0.916);
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(rgba(56, 168, 228, 0.606), rgb(56 169 228));
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(rgba(56, 168, 228, 0.948), rgb(28, 145, 208));
+}
