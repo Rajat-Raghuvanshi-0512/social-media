@@ -4,6 +4,7 @@ import { MdAddBox } from "react-icons/md"
 import { RiShieldUserFill } from "react-icons/ri"
 import { BiSearchAlt } from "react-icons/bi"
 import { useRouter } from 'next/router'
+import Image from 'next/image'
 
 const Navbar = () => {
     const router = useRouter()
@@ -11,7 +12,7 @@ const Navbar = () => {
         <div className="flex pt-5 pb-10 px-5 sm:px-20 justify-between items-center sticky top-0 z-10 ">
             <div className='flex'>
                 <div className="w-8 h-8">
-                    <img src="/slideshare (1).png" alt="logo " className="w-full h-full" />
+                    <Image width={100} height={100} src="/slideshare (1).png" alt="logo " className="w-full h-full" />
                 </div>
                 <h2 className='mx-3 text-white cursor-pointer'>Social Eaze</h2>
             </div>

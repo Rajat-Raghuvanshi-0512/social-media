@@ -16,16 +16,16 @@ const Home = () => {
             dispatch({ type: "CLEAR_MESSAGE" })
         }
         dispatch(getPostsOfFollowing())
-    }, [message])
+    }, [message, dispatch])
 
     useEffect(() => {
         dispatch(getAllUsers())
-    }, [])
+    }, [dispatch])
     return (
         <div className='lg:px-28 sm:px-5 overflow-y-auto mb-14 sm:mb-0 max-h-[80vh]'>
             <div className='bg-white text-center mb-4 flex items-center fixed top-20 w-full z-50 shadow-lg sm:hidden'>
                 <FaHeartbeat className='w-7 h-7 ml-3 text-red-500' />
-                <h1 className='mx-2'>Today's Feed</h1>
+                <h1 className='mx-2'>Today&apos;s Feed</h1>
             </div>
             <div className="grid sm:grid-cols-3 grid-rows-1 w-full lg:gap-10 sm:gap-4 grid-cols-1 px-2 sm:px-0 mt-14 sm:mt-0">
                 <div className="col-span-2 sm:h-[80vh]">

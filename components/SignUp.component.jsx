@@ -1,13 +1,14 @@
+import Image from "next/image"
 import Link from "next/link"
 
 const Signup = () => {
     return (
-        <div className="flex w-full mt-10 pl-32 pr-20">
+        <div className="flex w-full mt-10 lg:pl-32 lg:pr-20 px-10">
             <div className='w-full flex justify-center items-center gap-20'>
                 <div className=' bg-white rounded-2xl w-full'>
                     <p className="text-center py-4 text-[#3d1bc5] uppercase font-lobster text-4xl">Register</p>
                     <form action="">
-                        <div className='grid grid-cols-2 gap-10 px-10 py-3'>
+                        <div className='grid grid-cols-1 md:grid-cols-2 gap-10 px-10 py-3'>
                             <div>
                                 <label htmlFor="email" className='text-gray-700'>Email<span className='text-red-500'>*</span></label>
                                 <input type="email" id="email" className='w-full outline-1 rounded p-2 bg-purple-50 outline-[#7F5EFF]' required />
@@ -25,8 +26,8 @@ const Signup = () => {
                                 <input type="password" id="password" className='w-full p-2 outline-1 rounded bg-purple-50 outline-[#7F5EFF]' required />
                             </div>
                         </div>
-                        <div className="flex justify-between py-5">
-                            <button type='submit' className='bg-[#7F5EFF] hover:bg-[#5832ee] text-white rounded-lg px-5 my-4 font-bold mx-10'>Register</button>
+                        <div className="flex justify-between py-5 flex-col sm:flex-row">
+                            <button type='submit' className='bg-[#7F5EFF] hover:bg-[#5832ee] text-white rounded-lg p-5 sm:py-2 sm:my-4 font-bold mx-10'>Register</button>
                             <div className='px-12 text-right'>
                                 <div className='mt-2'>
                                     Already a user?
@@ -44,8 +45,8 @@ const Signup = () => {
                     </form>
                 </div>
             </div>
-            <div className='w-2/3 flex justify-end' >
-                <img src="/signup.png" alt="" className='' />
+            <div className='w-2/3 lg:flex justify-end hidden ' >
+                <Image width={400} height={300} src="/signup.png" alt="" className='' />
             </div>
         </div>
     )

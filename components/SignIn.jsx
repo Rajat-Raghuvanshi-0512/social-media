@@ -4,6 +4,7 @@ import { login } from '../Redux/Action/userAction'
 import { useDispatch, useSelector } from 'react-redux'
 import { toast } from 'react-toastify'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
 
 const SignIn = () => {
     const dispatch = useDispatch()
@@ -39,7 +40,7 @@ const SignIn = () => {
     }, [isAuthenticated, error, dispatch, router])
 
     return (
-        <div className='flex w-full mt-8 px-20'>
+        <div className='flex w-full mt-8 md:px-20'>
             <div className='w-full flex justify-center items-center'>
                 <div className=' bg-white rounded-2xl w-3/4 h-full'>
                     <p className="text-center py-4 text-[#3d1bc5] uppercase font-lobster text-4xl">Login</p>
@@ -67,8 +68,8 @@ const SignIn = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full flex items-end justify-end'>
-                <img src="/signin.png" alt="" className='w-4/5 h-full' />
+            <div className='w-full sm:flex items-end justify-end hidden'>
+                <Image width={400} height={400} src="/signin.png" alt="" className='w-4/5 h-full' />
             </div>
         </div>
     )

@@ -1,11 +1,12 @@
+import Image from "next/image"
 import Link from "next/link"
 
 const ForgotPass = () => {
     return (
-        <div className='flex w-full text-white'>
+        <div className='flex w-full text-white min-h-screen'>
             <div className='w-full'>
-                <form method="post" className="ml-32 mt-16 mr-10">
-                    <div className="text-5xl font-bold">Trouble Logging In?</div>
+                <form method="post" className="ml-10 md:ml-32 mt-16 mr-10">
+                    <div className="text-3xl sm:text-5xl font-bold">Trouble Logging In?</div>
                     <div className='flex flex-col justify-end px-5'>
                         <p className="py-8 font-bold">Enter your registered email address, we&quot;ll send you a link to get back into your account.</p>
                         <label htmlFor="email" className='text-white pb-3 font-bold text-xl'>Email</label>
@@ -20,8 +21,8 @@ const ForgotPass = () => {
                     </div>
                 </form>
             </div>
-            <div className='w-full p-10' >
-                <img src="/forgotpass.png" alt="" className='w-4/5' />
+            <div className='w-full p-10 hidden md:grid place-items-center' >
+                <Image width={350} height={350} src="/forgotpass.png" alt="" className='w-4/5' />
             </div>
         </div>
     )

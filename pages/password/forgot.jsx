@@ -8,7 +8,6 @@ const Forgot = () => {
                 <title>Forgot password | Socialeaze</title>
                 <link rel="icon" href="/slideshare.png" />
             </Head>
-            <Navbar />
             <ForgotPass />
         </>
     )
